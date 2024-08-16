@@ -12,7 +12,7 @@ import { showCart } from '../../AppStore/ShowCartSlice';
 import { RootState } from '../../AppStore/appStore';
 import { ItemTotal, TotalCartItems } from '../../AppStore/cartSlice';
 import { productsList, widgetsToShow } from '../../Data/data';
-import { category, sub_category } from '../CategotyIntefaces/CategotyInterface';
+import { category } from '../CategotyIntefaces/CategotyInterface';
 import { fitems } from '../../AppStore/filteredSlice';
 import Categories from '../Categories/Categories';
 

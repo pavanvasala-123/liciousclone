@@ -11,5 +11,5 @@ export const logo = {
 
  export  const catheader = {
     src:'https://assets.licious.in/oms/8839eb27-ddc1-bdd7-2f01-eff5a3ee1eb5/original/1716532118557.png',
-    alt:'chickenImage'
+    alt:'chickenimage'
 }

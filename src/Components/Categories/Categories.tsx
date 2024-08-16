@@ -2,7 +2,7 @@ import React from 'react'
 import { CategoriesCon,CatItemCon } from './Categories.styles'
 import { widgetsToShow } from '../../Data/data'
 import { CatItem } from '../Shopcategories/ShopCategories'
-import ShopCategoryItem from '../Shopcategories/ShopCategoryItem'
+
 import { Image } from '../Global.styles'
 import { useNavigate } from 'react-router-dom'
 

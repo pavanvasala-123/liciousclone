@@ -1,6 +1,5 @@
 import React from 'react'
 import { Homecon } from '../Home/Home.styles'
-import BestSellerItem from '../BestSellers/BestSellerItem'
 import { productsList } from '../../Data/data'
 import { useParams } from 'react-router-dom'
 import { Bitem } from '../BestSellers/BestSellers'

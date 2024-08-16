@@ -15,13 +15,12 @@ import Cart from './Components/Cart/Cart';
 import { useSelector } from 'react-redux';
 import { RootState } from './AppStore/appStore';
 import Address from './Components/ProceedTocheckout/Address';
-import { useState } from 'react';
+
 
 
 function App() {
   
   const isCartVisible = useSelector((state:RootState) => state.showCart.show);
-  const[category,ShowCategory] = useState(false)
   
 
   return (
