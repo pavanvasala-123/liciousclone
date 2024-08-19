@@ -2,6 +2,7 @@ import React from 'react'
 import { CategoriesCon,CatItemCon } from './Categories.styles'
 import { widgetsToShow } from '../../Data/data'
 import { CatItem } from '../Shopcategories/ShopCategories'
+import CloseIcon from '@mui/icons-material/Close';
 
 import { Image } from '../Global.styles'
 import { useNavigate } from 'react-router-dom'
@@ -15,6 +16,7 @@ const Categories = () => {
   }
   return (
     <CategoriesCon >
+     <CloseIcon className='close-icon'/>
        {
          categotyItems?.map((item:any)=> {
             const temp:CatItem = {

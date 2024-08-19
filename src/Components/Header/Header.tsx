@@ -54,7 +54,7 @@ const handleCart = () =>{
       ShowCategory(!category)
     }
 
-    const handleSearchInput =(e:any)=>{
+    const handleSearchInput =(e:React.BaseSyntheticEvent)=>{
       const filteredSubCategory = productsList.filter((eachItem) => eachItem.cat_name.includes(e.target.value.toLowerCase()))
       // console.log(filteredSubCategory.length)
     
@@ -105,7 +105,7 @@ const handleCart = () =>{
           {showpopUp && <div className='popup'>
                 <p>Cart is empty</p>
           </div>}
-         {category && <Categories />}
+         {category && <Categories/>}
         </HeaderContent>
 
     </Headercon>  

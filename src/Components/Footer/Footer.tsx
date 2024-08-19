@@ -4,14 +4,10 @@ import { FooterCon } from './Footer.styles'
 
 
 const Footer = () => {
-  // const products = popularSearches.products 
-  // console.log(products)
+
     return (
       <FooterCon className='footer-con'>
-        {/* <div className='horizontal_line'>
-          <hr/>
-          <img src='https://www.licious.in/image/rebranding/png/logo-homepage.png' alt='logo-homepage'/>
-        </div> */}
+      
         <div className='value-component-container'>
             <div className='value-component-content-container'>
                 <div>
@@ -30,19 +26,7 @@ const Footer = () => {
                   }
               </ul>
         </div>
-        {/* <div className='popular-searches-con'>
-                <div className='popular-searches-content-con'>
-                  {
-                    popularSearches?.forEach((each_search:any) => 
-                      each_search.products.map((each_search_item:any) =>
-                        <h4>{each_search_item.category}</h4>
-                       
-                      )
-                    )
-                   
-                  }
-                </div>
-        </div> */}
+       
         <div className='copy-right-con'>
                   <div className='copy-right-content-con'>
                       <p className='copy-right-heading'>© 2021 Delightful Gourmet Pvt Ltd. All Rights Reserved.</p>

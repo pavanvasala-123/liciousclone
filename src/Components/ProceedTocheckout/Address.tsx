@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import { AddressCon } from './proceesToCheckout.styles'
 import { Homecon } from '../Home/Home.styles'
 
 const Address = () => {
-    // const handleSubmit = (e:any)=>{
-    //     e.preventDefault()
-    // }
+    
 
     const [formData, setFormData] = useState({
         fullName: '',
@@ -16,14 +14,14 @@ const Address = () => {
         postalCode: '',
       });
     
-      const handleChange = (e:any) => {
+      const handleChange = (e:ChangeEvent<HTMLInputElement>) => {
         setFormData({
           ...formData,
           [e.target.name]: e.target.value,
         });
       };
     
-      const handleSubmit = (e:any) => {
+      const handleSubmit = (e:ChangeEvent<HTMLFormElement>) => {
         e.preventDefault();
         // Handle form submission
         console.log(formData);

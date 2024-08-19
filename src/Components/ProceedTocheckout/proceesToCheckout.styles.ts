@@ -66,6 +66,7 @@ export const AddressCon = styled.div`
   .submit-button {
     font-size: 16px;
     padding: 10px;
+    background-color: #e40737;
   }
 }
 
