@@ -16,6 +16,11 @@ import { category } from '../CategotyIntefaces/CategotyInterface';
 import { fitems } from '../../AppStore/filteredSlice';
 import Categories from '../Categories/Categories';
 
+export interface ICategory {
+  category: boolean;
+  ShowCategory:React.Dispatch<React.SetStateAction<boolean>>
+
+}
 const Header = () => {
 
   const [showpopUp , setShowpopUp] = useState(false)
@@ -105,7 +110,7 @@ const handleCart = () =>{
           {showpopUp && <div className='popup'>
                 <p>Cart is empty</p>
           </div>}
-         {category && <Categories/>}
+         {category && <Categories category={category} ShowCategory={ShowCategory} />}
         </HeaderContent>
 
     </Headercon>  
