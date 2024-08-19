@@ -21,7 +21,7 @@ const Cart = () => {
     useEffect(()=>{
         dispatch(ItemTotal())
         dispatch(TotalCartItems())
-    },[cartItems])
+    },[cartItems,cartTotal])
 
     const handleCkeckout = ()=>{
       navigate("/address")
