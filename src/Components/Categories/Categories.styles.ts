@@ -13,9 +13,17 @@ export const CategoriesCon = styled.div`
     &::-webkit-scrollbar{
         display: none;
     }
+    box-shadow: 10px 10px 20px #FCF8F3;
 
     @media screen {
         
+    }
+    .close-icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+        cursor: pointer;
     }
 
 `
