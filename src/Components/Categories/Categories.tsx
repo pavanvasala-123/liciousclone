@@ -6,8 +6,11 @@ import CloseIcon from '@mui/icons-material/Close';
 
 import { Image } from '../Global.styles'
 import { useNavigate } from 'react-router-dom'
+import { ICategory } from '../Header/Header';
 
-const Categories = () => {
+
+const Categories = (props:ICategory) => {
+  const {category,ShowCategory} = props
   const categotyItems = widgetsToShow[0].widgetMappings
   const navigate = useNavigate()
   const shopCategory = (cat_name:string) =>{
@@ -16,7 +19,7 @@ const Categories = () => {
   }
   return (
     <CategoriesCon >
-     <CloseIcon className='close-icon'/>
+     <CloseIcon className='close-icon' onClick={()=>ShowCategory(!category)}/>
        {
          categotyItems?.map((item:any)=> {
             const temp:CatItem = {
