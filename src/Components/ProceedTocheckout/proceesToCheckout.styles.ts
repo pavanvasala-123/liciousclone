@@ -38,7 +38,7 @@ export const AddressCon = styled.div`
 .submit-button {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
+  background-color:  #e40737;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -48,7 +48,7 @@ export const AddressCon = styled.div`
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color:  #e40737;
 }
 
 /* Responsive Styles */
